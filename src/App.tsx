@@ -167,7 +167,9 @@ export default function App() {
     return (
       <div className="lang-screen">
         <div className="lang-card">
-          <div className="lang-logo">K</div>
+          <div className="lang-logo">
+            <img src="/images/logo.png" alt="logo" className="lang-logo-img" />
+          </div>
           <h1 className="lang-title">بيكورا / Pekora</h1>
           <p className="lang-sub">اختر اللغة — Choose your language</p>
           <div className="lang-buttons">
@@ -240,6 +242,7 @@ export default function App() {
           )}
         </section>
 
+        {platform === "ios" && (
         <section className="section">
           <h2 className="section-title">
             <IconPen />
@@ -256,6 +259,7 @@ export default function App() {
             ))}
           </div>
         </section>
+        )}
 
         <section className="section">
           <h2 className="section-title">
